@@ -40,10 +40,16 @@ Start with a fresh install from [RaspberryPi.org](https://www.raspberrypi.org/do
 * As an FYI I have written a node.js class [blePeripheral]( https://github.com/RuckerGauge/blePeripheral) that sets up a sample Bluetooth LE Peripheral over this Bluez D-Bus interface.  
 * If you would like to query the bluez dbus interface you can type ** sudo gdbus introspect --system --dest com.netConfig --object-path / --recurse**
 * If you would like to install and run my [blePeripheral]( https://github.com/RuckerGauge/blePeripheral) you will need to install node.js and github onto your Raspberry Pi zero.  I have provided those steps below:
+* The above steps were created with input from these posts: 
+    * https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/
+    * https://www.raspberrypi.org/forums/viewtopic.php?t=181566#p1156312
+    * https://www.instructables.com/id/Control-Bluetooth-LE-Devices-From-A-Raspberry-Pi/
+    * http://www.linuxfromscratch.org/blfs/view/8.3-systemd/general/bluez.html
 
 # Install Node.js and GitHub
-I think it is important to be on the latest stable version of node.js and I do my best to make sure my apps support it.  Here is how I find the latest version for the Raspberry Pi Zero W
+I think it is important to be on the latest stable version of node.js and I do my best to make sure my apps support it.  Here is how I find the latest version for the Raspberry Pi Zero W. These steps are based on information from https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
 ## Node and NPM install
+
 * Type **uname -m** You will see the Raspberry Pi Zero returns armv61
 * Now go to this website https://nodejs.org/en/download/ to find the latest version of node based on your hardware.  You should see an option to click on ARMv6 in the Linux Binaries row of the table.  The link behind that button is what you want.  Today 12/17/2018 the link is https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz. Download that on your Pi by typing **wget https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz**
 * Type **tar -xf node-v10.14.2-linux-armv6l.tar.xz** to expand the tarball into a subdirectory.
