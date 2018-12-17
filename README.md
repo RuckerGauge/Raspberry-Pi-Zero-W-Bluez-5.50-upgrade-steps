@@ -1,5 +1,5 @@
 # Raspberry Pi Zero W Bluez v5.50 upgrade steps
-`Posted on 12/17/2018` <br>
+**Posted on 12/17/2018** <br>
 These are the steps I follow for upgrading the bluetooth version 5.43 included in Raspbian Stretch Lite (kernel version 4.14 dated 11/13/2018) to the latest version of Bluez 5.50.  The reason for the upgrade is to setup the Raspberry Pi Zero W as a Bluetooth Low Energy (BLE) Peripheral.  I disable a great deal of the default bluetooth services since I don’t need them to be a BLE Peripheral.  So do not follow these instructions if your trying to setup your Raspberry Pi as a generic desktop device.
 
 Start with a fresh install of Raspbian Stretch Lite from [RaspberryPi.org](https://www.raspberrypi.org/downloads/raspbian/) on your SD card.  Connect a keyboard and monitor to your raspberry Pi and start at step 1.
@@ -31,8 +31,8 @@ Start with a fresh install of Raspbian Stretch Lite from [RaspberryPi.org](https
     * ExecStart=/usr/libexec/bluetooth/bluetoothd --noplugin=wiimote,battery,deviceinfo,hostname,scanparam,autopair
     * save and exit
 2.  Type `sudo nano /etc/bluetooth/main.conf` 
-    * remove the pound-sign from in front of Name = and set a name for your peripheral.  In my case the Name = rGauge Transmitter
-    * remove the pound-sign from in front of ControllerMode and set it = le.  ControllerMode = le.
+    * remove the pound-sign from in front of Name = and set a name for your peripheral.  In my case the **Name = rGauge Transmitter**
+    * remove the pound-sign from in front of ControllerMode and set it = le.  **ControllerMode = le**.
     * save and exit.
 3.  Type `sudo reboot` log back in and check versions.  You can also type `sudo systemctl status bluetooth` to check service status.
 ## Notes
