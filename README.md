@@ -59,7 +59,7 @@ I think it is important to be on the latest stable version of node.js and I do m
 * You can now remove the install files. Type `cd` then type `rm node-v10.14.2-linux-armv6l.tar.xz && rm -r -f node-v10.14.2-linux-armv6l`
 ## Git Hub install
 * Type `sudo apt-get install git` 
-* As one last step (probably not necessary) I check for any updates. Type `sudo apt-get update && sudo apt-get upgrade`
+* As one last step (probably not necessary) I check for any updates. Type `sudo apt-get update && sudo apt-get dist-upgrade`
 ## Next Step
 Head on over to the install section of the [blePeripheral]( https://github.com/RuckerGauge/blePeripheral) to setup a sample D-Bus based bluetooth LE Peripheral and securely connect to it with you iPhone! 
 
