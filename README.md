@@ -52,6 +52,7 @@ I think it is important to be on the latest stable version of node.js and I do m
 
 * Type `uname -m` You will see the Raspberry Pi Zero returns armv61
 * Now go to this website https://nodejs.org/en/download/ to find the latest version of node based on your hardware.  You should see an option to click on ARMv6 in the Linux Binaries row of the table.  The link behind that button is what you want.  Today 12/17/2018 the link is https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz. Download that on your Pi by typing `wget https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz`
+for Raspberry Pi 2B `wget https://nodejs.org/dist/v10.15.1/node-v10.15.1-linux-armv7l.tar.xz`
 * Type `tar -xf node-v10.14.2-linux-armv6l.tar.xz` to expand the tarball into a subdirectory.
 * Type `cd node-v10.14.2-linux-armv6l`
 * Type `sudo cp -R * /usr/local/` 
