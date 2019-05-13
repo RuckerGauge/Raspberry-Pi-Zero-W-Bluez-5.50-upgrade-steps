@@ -14,6 +14,7 @@ Start with a fresh install of Raspbian Stretch Lite from [RaspberryPi.org](https
 	* Set local time zone
 	* Expand os to use all of SD card
 3.	Type `sudo reboot`	After it boots back up log back into your pi with your new password.
+
 3b.	Type `sudo apt-get update`
 4.	Type `sudo apt-get install libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev -y`
 5.	Type `wget www.kernel.org/pub/linux/bluetooth/bluez-5.50.tar.xz`
