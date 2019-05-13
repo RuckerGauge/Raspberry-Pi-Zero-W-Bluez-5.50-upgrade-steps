@@ -52,13 +52,13 @@ I think it is important to be on the latest stable version of node.js and I do m
 ## Node and NPM install
 
 * Type `uname -m` You will see the Raspberry Pi Zero returns armv61
-* Now go to this website https://nodejs.org/en/download/ to find the latest version of node based on your hardware.  You should see an option to click on ARMv6 in the Linux Binaries row of the table.  The link behind that button is what you want.  Today 12/17/2018 the link is https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz. Download that on your Pi by typing `wget https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz`
-for Raspberry Pi 2B `wget https://nodejs.org/dist/v10.15.1/node-v10.15.1-linux-armv7l.tar.xz`
-* Type `tar -xf node-v10.14.2-linux-armv6l.tar.xz` to expand the tarball into a subdirectory.
-* Type `cd node-v10.14.2-linux-armv6l`
+* Now go to this website https://nodejs.org/en/download/ to find the latest version of node based on your hardware.  You should see an option to click on ARMv6 in the Linux Binaries row of the table.  The link behind that button is what you want.  Today 5/13/2019 the link is https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-armv6l.tar.xz. Download that on your Pi by typing `wget https://nodejs.org/dist/v10.14.2/node-v10.14.2-linux-armv6l.tar.xz`
+for Raspberry Pi 2B `wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-armv6l.tar.xz`
+* Type `tar -xf node-v10.15.3-linux-armv6l.tar.xz` to expand the tarball into a subdirectory.
+* Type `cd node-v10.15.3-linux-armv6l`
 * Type `sudo cp -R * /usr/local/` 
 * Type `node -v` to see the node version.  In this case it should come back with v10.14.2
-* You can now remove the install files. Type `cd` then type `rm node-v10.14.2-linux-armv6l.tar.xz && rm -r -f node-v10.14.2-linux-armv6l`
+* You can now remove the install files. Type `cd` then type `rm node-v10.15.3-linux-armv6l.tar.xz && rm -r -f node-v10.15.3-linux-armv6l`
 ## Git Hub install
 * Type `sudo apt-get install git` 
 * As one last step (probably not necessary) I check for any updates. Type `sudo apt-get update && sudo apt-get dist-upgrade`
