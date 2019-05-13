@@ -14,20 +14,19 @@ Start with a fresh install of Raspbian Stretch Lite from [RaspberryPi.org](https
 	* Set local time zone
 	* Expand os to use all of SD card
 3.	Type `sudo reboot`	After it boots back up log back into your pi with your new password.
-
-3b.	Type `sudo apt-get update`
-4.	Type `sudo apt-get install libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev -y`
-5.	Type `wget www.kernel.org/pub/linux/bluetooth/bluez-5.50.tar.xz`
-6.	Type `tar xvf bluez-5.50.tar.xz && cd bluez-5.50`
-7.	Type `./configure --prefix=/usr --mandir=/usr/share/man --sysconfdir=/etc --localstatedir=/var --disable-cups --disable-a2dp --disable-avrcp --disable-network --disable-hid --disable-hog`
-8.	Type `make -j4`
-9.	Type `sudo make install`
-10.	Type `sudo reboot` reboot and log back in
-11.	Type `sudo cp /usr/libexec/bluetooth/bluetoothd /usr/lib/bluetooth`
-12.	Type `bluetoothctl -v` should say 5.50
-13.	Type `bluetoothd --version` should say 5.50
-14. Type `sudo apt-get update && sudo apt-get upgrade`
-15. Type `rm bluez-5.50.tar.xz && rm -r -f bluez-5.50` to remove install files.
+4.	Type `sudo apt-get update`
+5.	Type `sudo apt-get install libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev -y`
+6.	Type `wget www.kernel.org/pub/linux/bluetooth/bluez-5.50.tar.xz`
+7.	Type `tar xvf bluez-5.50.tar.xz && cd bluez-5.50`
+8.	Type `./configure --prefix=/usr --mandir=/usr/share/man --sysconfdir=/etc --localstatedir=/var --disable-cups --disable-a2dp --disable-avrcp --disable-network --disable-hid --disable-hog`
+9.	Type `make -j4`
+10.	Type `sudo make install`
+11.	Type `sudo reboot` reboot and log back in
+12.	Type `sudo cp /usr/libexec/bluetooth/bluetoothd /usr/lib/bluetooth`
+13.	Type `bluetoothctl -v` should say 5.50
+14.	Type `bluetoothd --version` should say 5.50
+15. Type `sudo apt-get update && sudo apt-get upgrade`
+16. Type `rm bluez-5.50.tar.xz && rm -r -f bluez-5.50` to remove install files.
 ## Configure Bluez
 1.  Type `sudo nano /lib/systemd/system/bluetooth.service` and change the ExecStart line to match the following:
     * ExecStart=/usr/libexec/bluetooth/bluetoothd --noplugin=wiimote,battery,deviceinfo,hostname,scanparam,autopair
