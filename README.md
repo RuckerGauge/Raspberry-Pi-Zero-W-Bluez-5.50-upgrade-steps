@@ -57,7 +57,7 @@ for Raspberry Pi 2B `wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-a
 * Type `tar -xf node-v10.15.3-linux-armv6l.tar.xz` to expand the tarball into a subdirectory.
 * Type `cd node-v10.15.3-linux-armv6l`
 * Type `sudo cp -R * /usr/local/` 
-* Type `node -v` to see the node version.  In this case it should come back with v10.14.2
+* Type `node -v` to see the node version.  In this case it should come back with v10.15.3
 * You can now remove the install files. Type `cd` then type `rm node-v10.15.3-linux-armv6l.tar.xz && rm -r -f node-v10.15.3-linux-armv6l`
 ## Git Hub install
 * Type `sudo apt-get install git` 
